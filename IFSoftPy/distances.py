@@ -7,7 +7,6 @@ def ifss_hamming_distance(ifss1, ifss2):
     else:
         vm1 = np.absolute(ifss1.membership_values - ifss1.non_membership_values)
         vm2 = np.absolute(ifss2.membership_values - ifss2.non_membership_values)
-        print(vm1)
         distance = np.sum(vm1 - vm2)
         return distance / (2 * m)
 
